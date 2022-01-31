@@ -1,84 +1,68 @@
 
 @font-face{
 	font-family: Myfont;
-	src: url("./Charming.otf");
-	color: white;
+	src: url("./font.otf");
 }
 
 html {
-	background-color: black;
+	background-color: white;
+}
+
+
+
+.title {
+	float:left;
+	font-family: Myfont;
+	border-bottom: 2px solid black;
 }
 
 .sidenav{
 	font-family: Myfont;
-	text-align: center;
-	height: 100%;
-	width: 185px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 2%;
-	overflow-x: hidden;
-	padding-top: 10px;
-	color:white;
+	float: right;
+	font-size: 55px;
+	border-bottom: 2px solid black;
 }
 
 .sidenav a{
+	
 	padding: 6px 8px 6px 16px;
 	text-decoration: none;
-	font-size: 30px;
+	font-size: 20px;
 	display: black;
-	color: white;
-}
-
-#main{
-	padding-top: 3%;
-	margin-left: 185px;
-}
-
-div.photos{
-	top: 2%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-div.solo{
-	text-align: center;
-	vertical-align: middle;
-}
-
-div.specs{
-	font-family: Myfont;
-	text-align: center;
-	color: white;
 }
 
 a {
-	color: white;
+	color: black;
 }
 
-.gallery {
-    	display: grid;
-    	grid-template-columns: repeat(8, 1fr);
-    	grid-template-rows: repeat(9, 5vw);
-	margin-left: 185px;
-	padding: 5px;
-	color: white;
+.par {
+	display: block;
 	text-align: center;
 	font-family: Myfont;
+	position: absolute;
+	font-size: 30px;
+	top: 250px;
+	left: 200px;
 }
 
 .gallery_img {
-    	width: 100%;
-    	height: 100%;
-    	object-fit: cover;
-	border: 2px solid white;
+
+	display: block;
+	margin-left:auto;
+	margin-right:30%;
+	width:25%;
+	object-fit: cover;
+	position: relative;
+	top: 150px;
+
 }
 
-.gallery_item--1 {
-    grid-column-start: 2;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 10;
+.about {
+	display: block;
+	text-align: center;
+	font-family: Myfont;
+	position: absolute;
+	font-size: 30px;
+	top: 250px;
+	left: 50px;
 }
